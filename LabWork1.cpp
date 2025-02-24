@@ -7,16 +7,16 @@ int main()
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
 	int n, num, digit, rev = 0;
-	cout << "Ââåäèòå ÷èñëî: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	cin >> num; n = num;
 	do
 	{
 		digit = num % 10; rev = (rev * 10) + digit; num = num / 10;
 	} while (num != 0);
-	cout << "Ïåðåâ¸ðíóòîå ÷èñëî: " << rev << endl;
+	cout << "ÐŸÐµÑ€ÐµÐ²Ñ‘Ñ€Ð½ÑƒÑ‚Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: " << rev << endl;
 
-	if (n == rev) cout << "×èñëî ÿâëÿåòñÿ ïàëèíäðîìîì";
-	else cout << "×èñëî íå ÿâëÿåòñÿ ïàëèíäðîìîì";
+	if (n == rev) cout << "Ð§Ð¸ÑÐ»Ð¾ ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ð¿Ð°Ð»Ð¸Ð½Ð´Ñ€Ð¾Ð¼Ð¾Ð¼";
+	else cout << "Ð§Ð¸ÑÐ»Ð¾ Ð½Ðµ ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ð¿Ð°Ð»Ð¸Ð½Ð´Ñ€Ð¾Ð¼Ð¾Ð¼";
 
 	return 0;
 }
